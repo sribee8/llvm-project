@@ -59,8 +59,8 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
 
     if (result != to_compare) {
       std::cout << std::hexfloat << "Failing x: " << x << std::endl;
-      std::cout << std::hexfloat << "Failing y: " << x << std::endl;
-      std::cout << std::hexfloat << "Failing z: " << x << std::endl;
+      std::cout << std::hexfloat << "Failing y: " << y << std::endl;
+      std::cout << std::hexfloat << "Failing z: " << z << std::endl;
       std::cout << std::hexfloat << "Failing output: " << result << std::endl;
       std::cout << std::hexfloat << "Expected: " << to_compare << std::endl;
       __builtin_trap();
