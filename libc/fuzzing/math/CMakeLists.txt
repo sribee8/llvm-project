@@ -196,3 +196,12 @@ add_libc_fuzzer(
   DEPENDS
     libc.src.__support.FPUtil.generic.sqrt
 )
+
+add_libc_fuzzer(
+  fma_fuzz
+  NEED_MPFR
+  SRCS
+    fma_fuzz.cpp
+  DEPENDS
+    libc.src.math.fma
+)
